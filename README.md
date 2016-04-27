@@ -13,6 +13,18 @@ To run tests:
 
     lein test
 
+To start a REPL:
+
+    lein repl
+
+The REPL will start in a `user` namespace that is prepopulated for a
+["reloaded"](https://github.com/stuartsierra/reloaded) workflow. In the REPL,
+call
+
+    user=> (go)
+
+to reload source and restart the application.
+
 ## License
 
 Copyright © 2016 Steve M. Kim

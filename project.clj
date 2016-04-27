@@ -10,4 +10,7 @@
                  [camel-snake-kebab "0.4.0"]
                  [ch.qos.logback/logback-classic "1.1.3"]]
   :main component-demo.main
-  :profiles {:uberjar {:aot :all}})
+  :profiles {:uberjar {:aot :all}
+             :repl {:source-paths ["dev"]
+                    :dependencies [[org.clojure/tools.namespace "0.2.11"]]
+                    :main user}})
