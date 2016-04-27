@@ -11,7 +11,9 @@
                  [camel-snake-kebab "0.4.0"]
                  [ch.qos.logback/logback-classic "1.1.3"]
                  [com.h2database/h2 "1.4.191"]
-                 [com.mchange/c3p0 "0.9.5.2"]]
+                 [com.mchange/c3p0 "0.9.5.2"]
+                 [commons-io/commons-io "2.5"]
+                 [ring/ring-jetty-adapter "1.4.0"]]
   :main component-demo.main
   :profiles {:uberjar {:aot :all}
              :repl {:source-paths ["dev"]
