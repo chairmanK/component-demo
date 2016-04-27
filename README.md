@@ -7,7 +7,11 @@ This example application demonstrates usage of
 
 To run the application:
 
-    lein trampoline run
+    lein trampoline run -p $PORT -d $DATABASE
+
+where `$PORT` is the listening port number for the HTTP server and `$DATABASE`
+is the filesystem path to a H2 database file (which will be created if it does
+not already exist)
 
 To run tests:
 
