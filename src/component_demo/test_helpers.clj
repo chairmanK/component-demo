@@ -1,6 +1,8 @@
 (ns component-demo.test-helpers
   (:require
-    [com.stuartsierra.component :as component]))
+    [com.stuartsierra.component :as component])
+  (:import
+    [java.util Arrays]))
 
 (defmacro with-components
   "Start components, evaluate the body with local bindings for the started
@@ -18,3 +20,7 @@
        (try
          (with-components ~(subvec bindings 2) ~@body)
          (finally (component/stop ~(bindings 0)))))))
+
+(defn bytes=
+  [^bytes x ^bytes y]
+  (Arrays/equals x y))
